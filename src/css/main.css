@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     padding: 3vh 8vw 0 7vw;
     height: 10vh;
@@ -143,6 +147,41 @@ nav .menu-nav__link {
     .nav .menu-nav__link {
         font-size: 1.5rem;
     }
+}
+
+.causes__section {
+    background: #FFFDF2;
+    padding: 10vh 6vw;
+}
+
+.causes__section .card {
+    border: none;
+    box-shadow: 1px 3px 6px rgba(114, 97, 11, 0.1);
+}
+
+.causes__section .progress {
+    width: 90%;
+    margin-bottom: 3vh;
+    background: #FFFFFF;
+    border: 0.5px solid #D1204B;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.causes__section span {
+    margin: 5vh 9vw;
+}
+
+.causes__section a {
+    padding: 10px 20px;
+}
+
+.causes__section h2 {
+    color: #404040;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    padding-bottom: 4rem;
 }
 
 .form__section {
