@@ -1,1 +1,1 @@
-# Complete-templates-for-a-Charity-Organisation---Frontend
+# HNG i7 Complete-envato-templates-for-a-Charity-Organisation
