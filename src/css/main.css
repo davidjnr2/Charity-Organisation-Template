@@ -83,6 +83,18 @@ body {
 
 /* End of Navigation stype */
 
+.contact__details {
+    padding: 10vh 10vw;
+}
+
+.contact__details h3 {
+    color: #D1204B;
+}
+
+.contact__details li {
+    list-style: none;
+}
+
 .gray-bg {
     background: #F3F2ED;
     padding: 10vh 6vw;
@@ -180,7 +192,7 @@ body {
 }
 
 footer {
-    padding: 5vh 3vw;
+    padding: 5vh 10vw;
     background: #360C16;
 }
 
