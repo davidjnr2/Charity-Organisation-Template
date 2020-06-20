@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     font-size: 18px;
     padding: 0 7%;
-    position: relative;
+    position: absolute;
 }
 
 .navbar-collapse {
@@ -83,8 +83,76 @@ body {
 
 /* End of Navigation stype */
 
+.goals__section_hero {
+    background: url(../img/laugh.jpg);
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+}
+
+.hero {
+    /* position: relative; */
+    background: url(../img/hero.png);
+    /* */
+    background-position: center;
+}
+
+.hero .btn {
+    color: #fff;
+}
+
+.hero span {
+    color: #fff;
+    padding-left: 2vw;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn-hero {
+    background: #D1204B;
+}
+
+.hero h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10vh;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero .container {
+    padding-top: 30vh;
+    padding-bottom: 40vh;
+}
+
+.hero-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7.41%, rgba(77, 77, 77, 0.5) 66.67%, rgba(247, 244, 232, 0.5) 100%);
+}
+
 .goals__section {
-    padding: 15vh 0;
+    /* padding: 15vh 0; */
+    background: url(../img/laugh.jpg);
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+    /* background: rgba(209, 32, 75, 0.7); */
+    /* background: linear-gradient(to right, rgba(rgba(209, 32, 75, 0.7), 0.9), rgba(rgba(209, 32, 75, 0.7), 0.3)), lighten(#000, 70%); */
+}
+
+.goals__section .container {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.layer {
     background: rgba(209, 32, 75, 0.7);
 }
 
