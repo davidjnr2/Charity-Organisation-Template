@@ -68,6 +68,7 @@ body {
 
 .active {
     font-weight: 600;
+    color: #FFDE2F;
 }
 
 .logo_text {
@@ -96,8 +97,32 @@ body {
     background-position: center;
 }
 
+.contact__hero {
+    background: url(../img/contactus\ img.jpg);
+    background-size: cover;
+}
+
+.contact__hero p {
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+.contact__hero h4 {
+    color: #D1204B;
+    font-weight: 600;
+}
+
+.contact__hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .hero .btn {
     color: #fff;
+}
+
+.col-spacing {
+    margin-top: 15vh;
+    padding: 10vh 10vw;
 }
 
 .hero span {
@@ -110,6 +135,13 @@ body {
 
 .btn-hero {
     background: #D1204B;
+}
+
+.btn-mail {
+    background: #D1204B;
+    color: #fff;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .hero h4 {
