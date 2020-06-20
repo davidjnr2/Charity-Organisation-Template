@@ -17,6 +17,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
@@ -26,34 +27,123 @@
 <body>
 
     <header>
-        <div class="row expanded">
-            <div class="columns medium-2 small-12">
-                <div class="img-logo"><img src="./assets/images/logo.svg" alt=""></div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div>
+                <a class="navbar-brand logo_text" href="#">FOUNDATION</a>
             </div>
-            <div class="columns medium-8 small-12">
-                <div class="menu-btn float-right"><span class="menu-btn__burger"></span></div>
-                <nav class="nav">
-                    <ul class="menu-nav">
-                        <li class="menu-nav__item active"><a href="#!" class="menu-nav__link">Home</a></li>
-                        <li class="menu-nav__item"><a href="#!" class="menu-nav__link">About</a></li>
-                        <li class="menu-nav__item"><a href="#footer" class="menu-nav__link">Contact</a></li>
-                        <li class="menu-nav__item"><a href="#!" class="menu-nav__link">Blog</a></li>
-                        <li class="menu-nav__item"><a href="#!" class="menu-nav__link">Careers</a></li>
-                    </ul>
-                </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="first_Nav"></span>
+          <span class="second_Nav"></span>
+          <span class="third_Nav"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
             </div>
-            <div class="columns medium-2">
-                <div class="hide-for-small-only">
-                    <div class="primary-button">
-                        <a href="#">Request Invite</a>
-                    </div>
-                </div>
-
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Large textarea</label>
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
             </div>
         </div>
-    </header>
-    <section>
+    </div>
 
+    <section class="contact__details">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 small-12">
+                    <img src="./img/map.png" alt="">
+                    <button type="submit" class="btn btn-danger mb-2">Join Us</button>
+                </div>
+                <div class="col-md-6 small-12 offset-md-1">
+                    <h3>Contact Details</h3>
+                    <p>Please contact us directly using the details below or complete the enquiry form and our friendly staff will be in touch shortly.</p>
+                    <div class="">
+                        <div class="row row-cols-2">
+                            <div class="col col-small-6">
+                                <h5>Headquaters</h5>
+                                <ul>
+                                    <li>316 BlueLine</li>
+                                    <li>Lekki Lagos State</li>
+                                    <li>Nigeria</li>
+                                </ul>
+                            </div>
+                            <div class="col col-small-6">
+                                <h5>Call Us</h5>
+                                <ul>
+                                    <li>+23480944354565</li>
+                                    <li>+23480944354565</li>
+                                    <li>+23480944354565</li>
+                                </ul>
+                            </div>
+                            <div class="col col-small-6">
+                                <h5>IDP Camp Branch</h5>
+                                <ul>
+                                    <li>316 BlueLine</li>
+                                    <li>Lekki Lagos State</li>
+                                    <li>Nigeria</li>
+                                </ul>
+                            </div>
+                            <div class="col col-small-6">
+                                <h5>Send us a mail</h5>
+                                <ul>
+                                    <li>helpdesk@fountainaidng.com</li>
+                                    <li>helpdesk@fountainaidng.com</li>
+                                    <li>helpdesk@fountainaidng.com</li>
+                                </ul>
+                            </div>
+                            <div class="col col-small-6">
+                                <h5>Branch</h5>
+                                <ul>
+                                    <li>316 BlueLine</li>
+                                    <li>Lekki Lagos State</li>
+                                    <li>Nigeria</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section class="form__section align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-12">
+                    <h3 class="text-center">Contribute and Aid in our activities</h3>
+                    <p>Want to become a member of our causes and make a difference in the lives of people during this time? </p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center container ">
+            <form class="form-inline">
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="" class="sr-only">Full name</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="Full Name">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="inputPassword2" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-danger mb-2">Join Us</button>
+            </form>
+        </div>
     </section>
 
     <footer>
