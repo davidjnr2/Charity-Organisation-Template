@@ -207,6 +207,21 @@ body {
 
 .contact__details {
     padding: 10vh 10vw;
+    background: #FFF2F5;
+}
+
+.contact__details .card {
+    border: none;
+    background: transparent;
+}
+
+.contact__details p {
+    width: 65%;
+    margin-bottom: 5vh;
+}
+
+.contact__details li {
+    line-height: 1.8;
 }
 
 .contact__details h3 {
@@ -321,7 +336,7 @@ footer {
 footer li {
     color: #BDBDBD;
     list-style-type: none;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 
 footer h4 {
