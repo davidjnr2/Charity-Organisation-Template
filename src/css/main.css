@@ -418,4 +418,10 @@ footer h4 {
     footer {
         padding: 5vh 2vw;
     }
+    .contact__hero .navbar-collapse {
+        background: #9b9999;
+    }
+    .hero .navbar-collapse {
+        background: #9b9999;
+    }
 }
