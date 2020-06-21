@@ -118,21 +118,21 @@
                     <p class="p-heading">Our Goals and Achievements so far</p>
                     <div class="row mt-5">
                         <div class="col-md-6 col-sm-6">
-                            <span>1600+</span>
+                            <span class="counter" data-count="1600"></span>
                             <p>Children back to school</p>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <span>80+</span>
+                            <span class="counter" data-count="80"></span>
                             <p>Farmers Funded</p>
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col-md-6 col-sm-6">
-                            <span>60000+</span>
+                            <span class="counter" data-count="60000"></span>
                             <p>Refugees being Fed</p>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <span>25</span>
+                            <span class="counter" data-count="25"></span>
                             <p>Camps Setup</p>
                         </div>
                         <button type="submit" class="btn btn-warning mb-2">DONATE NOW</button>
@@ -295,9 +295,47 @@
 
 
 
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <!-- The script tag -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
+
+                {
+                    duration: 5000,
+                    easing: 'linear',
+                    step: function() {
+                        $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+                    },
+                    complete: function() {
+                        $this.text(commaSeparateNumber(this.countNum));
+                        //alert('finished');
+                    }
+                }
+            );
+
+        });
+
+        function commaSeparateNumber(val) {
+            while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+            }
+            return val;
+        }
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

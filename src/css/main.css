@@ -108,6 +108,10 @@ body {
     color: #D1204B;
 }
 
+.section-pad span::before {
+    content: "$";
+}
+
 .goals__section_hero {
     background: url(../img/laugh.jpg);
     /* background-repeat: no-repeat; */
