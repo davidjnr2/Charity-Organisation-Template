@@ -35,6 +35,10 @@ body {
     border-bottom: 2px solid #FFFFFF;
 }
 
+.navbar-nav li {
+    color: #fff;
+}
+
 .navbar-toggler {
     margin-right: 20px;
     padding-right: 10px;
@@ -69,7 +73,7 @@ body {
 
 .active {
     font-weight: 600;
-    color: #FFDE2F;
+    /* color: #FFDE2F !important; */
 }
 
 .logo_text {
@@ -116,6 +120,10 @@ body {
     background: url(../img/laugh.jpg);
     /* background-repeat: no-repeat; */
     background-repeat: repeat-x;
+}
+
+.goals__section h5 {
+    color: #fff;
 }
 
 .hero {
