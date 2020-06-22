@@ -91,7 +91,7 @@ body {
 .hero {
     height: 100vh;
     position: relative;
-    background: url(../img/hero.png);
+    background: url(/img/hero.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
