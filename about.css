@@ -1,0 +1,247 @@
+.about-us{
+  position: relative;
+    background-image: url("../img/Bg(2).jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    width:100%;
+    margin-right:100% !important;
+    padding-right:10px !important;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.about-us .text-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 100%;
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.text-center h6 {
+  font-size: 16px;
+  color:#FFDE2F;
+  margin-bottom: 48px;
+}
+
+.testimony {
+  width: 872px;
+  margin: 0px auto;
+  position: relative;
+  margin-top: 48px;
+}
+
+.testimony img {
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.text-center h2 {
+  color:white;
+  font-size: 48px;
+  font-weight: bold
+}
+
+.intro {
+  padding: 100px 120px;
+}
+.body_content {
+  width: 100vw;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    line-height:200%;
+    padding-right: 0px;
+    overflow-x: hidden;
+}
+
+navbar {
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 0 7%;
+  position: absolute;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item {
+  margin: auto 5px;
+}
+
+.nav-item a {
+  border-radius: 2px soilid transparent;
+}
+
+.nav-item a:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+  padding-right: 10px;
+  height: 30px !important;
+  width: 30px !important;
+  display: flex;
+  flex-direction: column;
+  outline: none !important;
+}
+
+.navbar-toggler:hover {
+  border-color: none;
+}
+
+.navbar-toggler span {
+  margin: 2px 0;
+  height: 3px !important;
+  background-color: #ffffff !important;
+}
+
+.first_Nav {
+  width: 25px;
+}
+
+.second_Nav {
+  width: 23px;
+}
+
+.third_Nav {
+  width: 20px;
+}
+
+.active {
+  font-weight: 600;
+  color: #FFDE2F;
+}
+
+.logo_text {
+  font-family: 'Ruslan Display', cursive;
+  font-size: 36px;
+  color: #FFFFFF !important;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+}
+.alignment{
+  padding: 90px 120px;
+  background: #FFF2F5;
+}
+
+.image_holder{
+  padding: 0px;
+}
+.image_holder img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-text{
+    font-size: 36px;
+    color: #D1204B !important;
+    font-weight: bold;
+
+}
+.body-text{
+    font-size: 20px;
+    background-color: #FFF2F5;
+
+}
+.row.mission{
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.footer {
+  padding: 5vh 10vw;
+  background: #360C16;
+}
+
+footer li {
+  color: #BDBDBD;
+  list-style-type: none;
+  line-height: 2.0;
+}
+
+footer h4 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 12px !important;
+}
+.para-text{
+  font-size: 36px;
+  line-height: 27px;
+  color: #B3B3B3;
+  font-weight: 300;
+}
+
+.tname {
+  padding-top: 36px;
+  margin-bottom: 62px;
+}
+
+.scrollbtns{
+  margin-bottom:90px;
+}
+
+.scrollbtns img:nth-child(2) {
+  padding:0 36px;
+}
+@media(max-width: 850px){
+    .header-content{
+        font-size: 0.5em;
+        top: 35%;
+        width: 60%;
+    }
+
+    .about-us{
+        background-size: fill;
+        width: 90%;
+        padding-right: 100px;
+
+    }
+
+    .body-text{
+        height: 250px;
+        width:100%;
+        font-size:0.5em;
+    }
+    .head-text{
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width:425px){
+  .about-us{
+    width: 100%;
+    padding-right: 50%;
+    padding-left: 20%;
+  }
+  footer {
+    padding: 5vh 2vw;
+}
+}
