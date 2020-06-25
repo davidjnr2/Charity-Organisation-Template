@@ -1,0 +1,267 @@
+/* STYLES FOR CHARITY PAGE 2 COLUMN */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Where nav style started  */
+
+.navbar {
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 1% 7%;
+    position: absolute;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-item {
+    margin: auto 5px;
+}
+
+.nav-item a {
+    border-radius: 2px soilid transparent;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+    padding-right: 10px;
+    height: 30px !important;
+    width: 30px !important;
+    display: flex;
+    flex-direction: column;
+    outline: none !important;
+}
+
+.navbar-toggler:hover {
+    border-color: none;
+}
+
+.navbar-toggler span {
+    margin: 2px 0;
+    height: 3px !important;
+    background-color: #ffffff !important;
+}
+
+.first_Nav {
+    width: 25px;
+}
+
+.second_Nav {
+    width: 23px;
+}
+
+.third_Nav {
+    width: 20px;
+}
+
+.active .nav-link,
+.gallery {
+    font-weight: 600;
+    color: #ffde2f !important;
+}
+
+.logo_text {
+    /* font-family: "Ruslan Display", cursive; */
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+
+/* End of Navigation style */
+
+.hero {
+    height: 100vh;
+    position: relative;
+    background: url(../img/img2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero span {
+    color: #fff;
+    padding-left: 2vw;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.hero h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 10vh;
+}
+
+.hero p {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero .container {
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ====== Event Section ======  */
+
+.event-bg {
+    padding: 5% 7%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.event-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding-left: 1rem;
+}
+
+
+/*images with the same width*/
+
+.crop {
+    height: 350px;
+    /*width: 400px;*/
+    overflow: hidden;
+}
+
+.crop img {
+    height: 100%;
+    width: auto;
+}
+
+.crop a {
+    display: block;
+}
+
+.crop a:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.event-bg .event-body .w-more {
+    margin-top: 1rem;
+    display: block;
+}
+
+
+/* ====== End of Event Section ======  */
+
+.gallery-intro {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.layer {
+    background: rgba(209, 32, 75, 0.7);
+}
+
+
+/* hero text for gallery */
+
+footer {
+    padding: 5vh 10vw;
+    background: #360c16;
+}
+
+footer li {
+    color: #bdbdbd;
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+footer ul img {
+    padding-bottom: 5px;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px !important;
+}
+
+
+/*=  ===========================
+    MEDIA QUERY FOR EVENT SITE
+========================== */
+
+@media (max-width: 767px) {
+    .crop {
+        max-height: auto;
+        /*width: 400px;*/
+        max-width: 500px;
+        margin: auto;
+    }
+    .event-body {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero p {
+        width: 100%;
+        font-size: 40px;
+    }
+    .hero .container {
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+    }
+}
+
+@media (min-width: 1300px) {
+    .crop {
+        max-height: auto;
+        /*width: 400px;*/
+        max-width: 500px;
+        margin: auto;
+    }
+    .event-body {
+        padding: 0;
+        text-align: center;
+    }
+}

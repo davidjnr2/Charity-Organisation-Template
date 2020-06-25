@@ -8,8 +8,24 @@ body {
     overflow-x: hidden;
 }
 
+.goal{
+    color: #fff;
+    font-weight: 600
+}
 
+.our-plans{
+    color: #D1204B;
+    font-weight: 600
+}
 /* Where nav style started  */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: left;
+    overflow-y: auto
+}
+
 
 .navbar {
     justify-content: space-between;
@@ -21,6 +37,13 @@ body {
 .navbar-collapse {
     justify-content: flex-end;
     font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    vertical-align: left;
+    overflow-y: auto
 }
 
 .nav-item {
@@ -81,6 +104,8 @@ body {
 .nav-link {
     color: #FFFFFF !important;
 }
+
+
 
 
 /* End of Navigation stype */
@@ -185,6 +210,7 @@ body {
     color: #FFFFFF;
 }
 
+
 .hero .container {
     padding-top: 30vh;
     padding-bottom: 40vh;
@@ -193,6 +219,12 @@ body {
 .hero-overlay {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7.41%, rgba(77, 77, 77, 0.5) 66.67%, rgba(247, 244, 232, 0.5) 100%);
 }
+
+.btn-margin{
+    margin-top: 20px;
+}
+
+
 
 .goals__section {
     /* padding: 15vh 0; */

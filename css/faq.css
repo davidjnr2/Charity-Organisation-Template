@@ -1,0 +1,162 @@
+.faq{
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    width: 1366px;
+    height: 350px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3.5rem;
+    
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.container{
+    width:100%;
+    padding-right:10px !important;
+}
+
+.page_title {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 100%;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    line-height:200%;
+    overflow-x: hidden;
+
+}
+
+.img-logo {
+    padding-top: 0.7rem;
+}
+
+/* Where nav style started  */
+
+.navbar {
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 1% 7%;
+    position: absolute;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-item {
+    margin: auto 5px;
+}
+
+.nav-item a {
+    border-radius: 2px soilid transparent;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+    padding-right: 10px;
+    height: 30px !important;
+    width: 30px !important;
+    display: flex;
+    flex-direction: column;
+    outline: none !important;
+}
+
+.navbar-toggler:hover {
+    border-color: none;
+}
+
+.navbar-toggler span {
+    margin: 2px 0;
+    height: 3px !important;
+    background-color: #ffffff !important;
+}
+
+.first_Nav {
+    width: 25px;
+}
+
+.second_Nav {
+    width: 23px;
+}
+
+.third_Nav {
+    width: 20px;
+}
+
+.active .nav-link,
+.gallery {
+    font-weight: 600;
+    color: #ffde2f !important;
+}
+
+.logo_text {
+    /* font-family: "Ruslan Display", cursive; */
+    font-size: 30px;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+
+/* End of Navigation style */
+
+.quest-acc {
+    background-color: #FFE0E8;
+}
+
+a.pull-right {
+    color:#D1204B ;
+}
+footer {
+    padding: 5vh 10vw;
+    background: #360C16;
+}
+
+footer li {
+    color: #BDBDBD;
+    list-style-type: none;
+    line-height: 2.0;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px !important;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 5vh 2vw;
+    }
+
+@media screen and (max-width: 768px) {
+  .faq {
+    width: 100%;
+  }
+}
+}
