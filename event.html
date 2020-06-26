@@ -12,15 +12,14 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Fontawesome CDN Link -->
+    <!-- fontawesome css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Boostrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/event.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="event.css">
 
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,7 +33,8 @@
             <header>
                 <nav class="navbar fixed-top navbar-expand-lg navbar-light">
                     <div>
-                        <a class="navbar-brand logo_text" href="#">Foundation</a>
+                        <a class="navbar-brand logo_text" href="./index.html"><img src="./img/logo.png" alt="">
+                        </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="first_Nav"></span>
@@ -44,19 +44,21 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Pages</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
                             </li>
+                        </li>
+                        
                             <li class="nav-item">
                                 <a class="nav-link" href="./event.html">News & Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Causes</a>
-                            </li>
+                            </li>       
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">FAQ</a>
                             </li>
                     </div>
                 </nav>
@@ -77,211 +79,151 @@
 
     <!-- / * Albums of year to year activities */ -->
 
-    <section id="events">
-        <div class="container">
+    <section id="events" class="event-bg">
+        <div class="container-fluid mt-5">
             <div class="row">
                 <div class="col-md-6 col-sm-12">
-                    <div class="event-box">
+                    <div class="crop">
                         <a href="img/event1.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event1.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Education for All</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Zamfara State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event1.png" alt="" class="img-fluid" />
                         </a>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Education for All</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="event-box">
-                        <a href="img/img2.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/img2.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Feeding Program</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Borno State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="crop">
+                        <a href="img/Rectangle49.png" data-lightbox="gallery-mf">
+                            <img src="img/Rectangle49.png" alt="" class="img-fluid" />
                         </a>
                     </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Feeding Programme</h3>
+                        <span class="w-more">Borno State, 2018</span>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event2.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event2.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Education for All</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Zamfara State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event2.png" alt="" class="img-fluid" />
                         </a>
                     </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Education for All</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event1.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event1.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Feeding Programme</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Borno State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event1.png" alt="" class="img-fluid" />
                         </a>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="event-box">
-                        <a href="img/img2.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/img2.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Education for All</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Zamfara State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="event-body">
+                        <h3 class="event-title">Feeding Programme</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
+                        <a href="img/Rectangle49.png" data-lightbox="gallery-mf">
+                            <img src="img/Rectangle49.png" alt="" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Education for All</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event3.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event3.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Feeding Programme</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Borno State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event3.png" alt="" class="img-fluid" />
                         </a>
                     </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Feeding Programme</h3>
+                        <span class="w-more">Borno State, 2018</span>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event1.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event1.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Education for All</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Zamfara State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event1.png" alt="" class="img-fluid" />
                         </a>
                     </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Education for All</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event2.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event2.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Feeding Programme</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Borno State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event2.png" alt="" class="img-fluid" />
                         </a>
                     </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Feeding Programme</h3>
+                        <span class="w-more">Borno State, 2018</span>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="event-box">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
                         <a href="img/event3.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/event3.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Education for All</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Zamfara State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img src="img/event3.png" alt="" class="img-fluid" />
                         </a>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="event-box">
-                        <a href="img/img2.png" data-lightbox="gallery-mf">
-                            <div class="event-img">
-                                <img src="img/img2.png" alt="" class="img-fluid" />
-                            </div>
-                            <div class="event-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Feeding Programme</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Borno State, 2018 </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="event-body">
+                        <h3 class="event-title">Education for All</h3>
+                        <span class="w-more">Zamfara State, 2018</span>
                     </div>
                 </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="crop">
+                        <a href="img/Rectangle49.png" data-lightbox="gallery-mf">
+                            <img src="img/Rectangle49.png" alt="" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">Feeding Programme</h3>
+                        <span class="w-more">Borno State, 2018</span>
+                    </div>
+                </div>
+
             </div>
         </div>
-
     </section>
-    <!--/ Section Album End /-->
+
+    <!-- <div class="event-box">
+                <div class="col-md-6">
+                    <div class="event-box">
+                        <a href="img/event3.png" data-lightbox="gallery-mf">
+                            <div class="event-img">
+                                <img src="img/event3.png" alt="" class="img-fluid" />
+                            </div>
+                        </a>    
+                    </div>   
+                </div>
+        </div>              
+    !-->
 
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <ul>
-                        <h4>Logo</h4>
+                        <span><img src="./img/logo.png" alt=""></span>
                         <li>Our team gathers</li>
                         <li>Thousands of volunteers</li>
                         <li>With am mission to help</li>
@@ -317,9 +259,9 @@
                     <ul>
                         <h4>Connect with us</h4>
                         <li class="pb-3">
-                            <img src="/img/Vector.svg" alt="Facebook Icon">
-                            <img src="/img/Vector (1).svg" alt="Twitter Icon">
-                            <img src="/img/Vector (2).svg" alt="Instagram Icon">
+                            <img src="./img/Vector.svg" alt="Facebook Icon">
+                            <img src="./img/Vector (1).svg" alt="Twitter Icon">
+                            <img src="./img/Vector (2).svg" alt="Instagram Icon">
                         </li>
                         <li>Call Us</li>
                         <li>+23480944354565</li>
@@ -334,10 +276,15 @@
     </footer>
 
     <!-- Javascript Library -->
-    <!-- <script src="js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="main.js"></script>
+    <!-- jquery File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- <script src="js/plugins.js"></script> -->
+    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
